@@ -160,5 +160,5 @@ Qual é o seu objetivo principal com esse valor no momento e em quanto tempo pre
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- Utilizei 3 LLMs para testar meu agente financeiro para perceber suas reções e respostas, nos 3 casos eles se saíram muito bem, responderam com baso nos dados com respostas explicativas e simples para o usuário
+- Utilizei 3 LLMs para testar meu agente financeiro para perceber suas reções e respostas: Chatgpt, Microsoft Copilot e o Claude, nos 3 casos eles se saíram muito bem, responderam com baso nos dados com respostas explicativas e simples para o usuário
 - Nenhuma das LLMs entregaram respostas proibidas como senhas de clientes ou inventaram respostas como responder sobre o clima, todas se portaram como agentes financeiros sem alucinar respostas.
