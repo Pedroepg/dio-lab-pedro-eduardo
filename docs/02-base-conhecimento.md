@@ -34,8 +34,8 @@ Injetar os dados diretamente no prompt (Ctrl + C, Ctrl + V) ou carregar os arqui
 import pandas as pd
 import json as js
 
-historico = pd.read_csv(data/historico_atendimento.csv)
-transacoes = pd.read_csv(data/transacoes.csv
+historico = pd.read_csv('data/historico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
 
 with open('data/perfil_investidor.json', 'r', enconding = 'utf-8') as f:
     perfil = js.load(f)
