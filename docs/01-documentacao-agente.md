@@ -79,4 +79,4 @@ flowchart TD
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Não indica investimentos arriscados, não acessa dados bancarios sensíveis (como senhas e logins), não subistitui profissionais legais sobre o tema, ]
+Não indica investimentos arriscados, não acessa dados bancarios sensíveis (como senhas e logins), não subistitui profissionais legais sobre o tema.
