@@ -21,7 +21,7 @@ O Poupança poupada funciona como um consultor financeiro para ajudar os cliente
 ### 4. Diferencial e Impacto (30 seg)
 > Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-Esta solução é prática e simples, demonstrando facilidade em um tópico pouco disseminado a população, a questão do investimento do próprio dinheiro, qualquer um pode usar e utilizar seus poróprios dados para análise
+Esta solução é prática e simples, demonstrando facilidade em um tópico pouco disseminado a população, a questão do investimento do próprio dinheiro, qualquer um pode usar e utilizar seus próprios dados para análise
 obter indicações seguras e práticas para a aplicação do próprio dinheiro
 
 ---
