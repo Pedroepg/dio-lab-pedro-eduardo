@@ -15,7 +15,8 @@ A interface é feita em Streamlit, com um LLM local rodando via Ollama (modelo `
 ### 3. Demonstração (1 min)
 
 Gravação de tela mostrando a aplicação rodando: uma pergunta feita ao agente sobre o que fazer com um valor parado na poupança, e a resposta dele com base no perfil e nos produtos disponíveis.
-<img width="826" height="852" alt="image" src="https://github.com/user-attachments/assets/881fb08d-3d75-4158-b09e-12d384f56225" />
+<img width="1920" height="914" alt="Sem título" src="https://github.com/user-attachments/assets/047c0734-9790-48cc-9bae-bf4c5e453120" />
+
 
 ### 4. Diferencial e Impacto (30 seg)
 
