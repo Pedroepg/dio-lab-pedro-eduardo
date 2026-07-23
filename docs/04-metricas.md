@@ -69,10 +69,6 @@ Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
 
-- [Liste aqui]
-
 **O que pode melhorar:**
-
-- [Liste aqui]
 
 ---
