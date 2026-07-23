@@ -7,6 +7,68 @@ import requests
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODELO = "llama3"
 
+st.set_page_config(
+    page_title="Poupança Poupada",
+    page_icon="💰",
+    layout="centered",
+)
+
+# ---------- Estilo (tema vermelho Bradesco) ----------
+st.markdown("""
+    <style>
+        :root {
+            --bradesco-red: #CC092F;
+            --bradesco-red-dark: #9C0722;
+        }
+
+        .stApp {
+            background: linear-gradient(180deg, var(--bradesco-red) 0%, var(--bradesco-red-dark) 100%);
+        }
+
+        [data-testid="stSidebar"] {
+            background-color: #7a0619;
+        }
+
+        [data-testid="stSidebar"] * {
+            color: #ffffff !important;
+        }
+
+        .titulo-agente {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+
+        .subtitulo-agente {
+            text-align: center;
+            color: #f3d0d6;
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        [data-testid="stChatMessage"] {
+            background-color: #ffffff;
+            border-radius: 14px;
+            padding: 0.5rem 0.9rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        [data-testid="stChatMessage"] p,
+        [data-testid="stChatMessage"] span,
+        [data-testid="stChatMessage"] li,
+        [data-testid="stChatMessage"] div {
+            color: #111111 !important;
+        }
+
+        [data-testid="stChatInput"] textarea {
+            border-radius: 10px;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Carregamento de dados
 historico = pd.read_csv('data/historico_atendimento.csv')
 transacoes = pd.read_csv('data/transacoes.csv')
@@ -49,9 +111,9 @@ REGRAS:
 7. Não responda perguntas fora do escopo financeiro ou de temas aleatórios
 
 """
+
+
 # Chamando Ollama
-
-
 def perguntar(msg):
     prompt = f"""
     {system_prompt}
@@ -65,12 +127,23 @@ def perguntar(msg):
                       "model": MODELO, "prompt": prompt, "stream": False})
     return r.json()["response"]
 
-# interface
 
+# ---------- Sidebar com o perfil do cliente ----------
+with st.sidebar:
+    st.markdown("### 👤 Perfil do cliente")
+    st.write(f"**Nome:** {perfil['nome']}")
+    st.write(f"**Idade:** {perfil['idade']} anos")
+    st.write(f"**Perfil de investidor:** {perfil['perfil_investidor'].capitalize()}")
+    st.write(f"**Objetivo:** {perfil['objetivo_principal']}")
+    st.markdown("---")
+    st.write(f"**Patrimônio total:** R$ {perfil['patrimonio_total']:,.2f}")
+    st.write(f"**Reserva de emergência:** R$ {perfil['reserva_emergencia_atual']:,.2f}")
 
-st.title("Poupança Poupada")
+# ---------- Interface principal ----------
+st.markdown('<p class="titulo-agente">💰 Poupança Poupada</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitulo-agente">Seu consultor de investimentos seguros</p>', unsafe_allow_html=True)
 
 if pergunta := st.chat_input("Sua dúvida de investimento..."):
     st.chat_message("user").write(pergunta)
-    with st.spinner("..."):
+    with st.spinner("Consultando as melhores opções para você..."):
         st.chat_message("assistant").write(perguntar(pergunta))
