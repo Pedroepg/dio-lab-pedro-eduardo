@@ -28,11 +28,11 @@ obter indicações seguras e práticas para a aplicação do próprio dinheiro
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [x] Duração máxima de 3 minutos
+- [x] Problema claramente definido
+- [x] Solução demonstrada na prática
+- [x] Diferencial explicado
+- [x] Áudio e vídeo com boa qualidade
 
 ---
 
@@ -40,4 +40,4 @@ obter indicações seguras e práticas para a aplicação do próprio dinheiro
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+[[Link do vídeo]](https://drive.google.com/drive/u/0/folders/1rXVMqRw3OqM3W8erFk72mFn51ELbMDdT)
