@@ -1,28 +1,25 @@
 # Pitch (3 minutos)
 
- 
-## Roteiro Sugerido
+## Roteiro
 
 ### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
 
 Muitos brasileiros mantêm seu dinheiro na poupança ou na conta corrente parada por receio de complexidade ou falta de conhecimento, perdendo poder de compra para a inflação e deixando de rentabilizar com segurança.
 
 ### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
 
-O Poupança poupada funciona como um consultor financeiro para ajudar os clientes a tomarem decisões mais rentáveis e seguras para aplicações do dinheiro.
+O Poupança Poupada funciona como um consultor financeiro para ajudar os clientes a tomarem decisões mais rentáveis e seguras para aplicações do dinheiro. Ele analisa o perfil e as transações do cliente, identifica saldo parado sem rendimento otimizado e sugere alternativas de baixo risco e liquidez diária — como Tesouro Selic ou CDB Liquidez Diária — sempre em linguagem simples.
+
+A interface é feita em Streamlit, com um LLM local rodando via Ollama (modelo `llama3`), consultando uma base de conhecimento com o perfil, histórico e produtos financeiros disponíveis do cliente.
 
 ### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
 
-[Descreva o que será mostrado]
+Gravação de tela mostrando a aplicação rodando: uma pergunta feita ao agente sobre o que fazer com um valor parado na poupança, e a resposta dele com base no perfil e nos produtos disponíveis.
+<img width="826" height="852" alt="image" src="https://github.com/user-attachments/assets/881fb08d-3d75-4158-b09e-12d384f56225" />
 
 ### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-Esta solução é prática e simples, demonstrando facilidade em um tópico pouco disseminado a população, a questão do investimento do próprio dinheiro, qualquer um pode usar e utilizar seus próprios dados para análise
-obter indicações seguras e práticas para a aplicação do próprio dinheiro
+Esta solução é prática e simples, demonstrando facilidade em um tópico pouco disseminado na população — a questão do investimento do próprio dinheiro. Qualquer um pode usar seus próprios dados para análise e obter indicações seguras e práticas para a aplicação do próprio dinheiro.
 
 ---
 
@@ -38,6 +35,4 @@ obter indicações seguras e práticas para a aplicação do próprio dinheiro
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[[Link do vídeo]](https://drive.google.com/drive/u/0/folders/1rXVMqRw3OqM3W8erFk72mFn51ELbMDdT)
+[Pitch — Poupança Poupada](https://drive.google.com/drive/u/0/folders/1rXVMqRw3OqM3W8erFk72mFn51ELbMDdT)
